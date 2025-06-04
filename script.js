@@ -1055,10 +1055,10 @@ const allCharacters_data = [
             }catch(e){console.error("ASIGNADOR ERROR GRAL:",e,e.stack);const b=document.body;if(b){let d=document.getElementById('critical-error');if(!d){d=document.createElement('div');d.id='critical-error';d.style.cssText='display:block;position:fixed;bottom:5px;left:50%;transform:translateX(-50%);z-index:10000;padding:15px;width:90%;max-width:700px;text-align:center;background-color:maroon;color:white;font-size:12px;border-radius:8px;';b.appendChild(d);}d.innerHTML=`Error: ${e.message}. Revisa consola (F12).`;}}
         }
         document.addEventListener('DOMContentLoaded', () => initializeApp(allCharacters_data, packs_data));
-        
+
         // Máquina de escribir
         const textoIntro = "🕵️‍♂️ Archivo Confidencial: Caso Collins";
-        let i = 0; 
+        let i = 0;
         const speed = 75;
 
         function typeWriter() {
@@ -1073,9 +1073,9 @@ const allCharacters_data = [
         window.addEventListener("load", () => {
           const titleElement = document.getElementById("typewriter-title");
           if (titleElement) {
-            titleElement.textContent = ''; // Vaciar el contenido inicial del H1
-            i = 0; // Asegurar que el contador de la máquina de escribir se reinicia
-            typeWriter(); // Iniciar la animación
+            titleElement.textContent = '';
+            i = 0;
+            typeWriter();
           }
         });
 
